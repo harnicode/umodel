@@ -47,7 +47,7 @@ class UsersPage extends StatelessWidget {
                               vertical: 10, horizontal: 20),
                           child: GestureDetector(
                             onTap: () {
-                              context.navigate(UserDetailRoute(userId: user.id, user: user.toString()),);
+                              context.navigate(UserDetailRoute(userId: user.id, user: user.toJson().toString()),);
                             },
                             child: Container(
                               width: screenWidth,
